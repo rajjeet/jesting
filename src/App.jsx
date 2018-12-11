@@ -7,6 +7,7 @@ import {
     Route,
     Link
 } from 'react-router-dom'
+import NotificationViewer from "./components/NotificationsViewer";
 
 /**
  * App Component is the highest level real component in the application, it is the parent of the routes and an
@@ -20,6 +21,7 @@ const AppDisplay =  ()=>(
             </Link>
         </div>
 
+        <NotificationViewer />
         {/*Specify a route for the main page which renders when the path is empty*/}
         <Route exact path='/' render={()=><QuestionList />}/>
 
