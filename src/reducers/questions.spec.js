@@ -1,7 +1,7 @@
 import {questions} from './questions';
 
-describe(`The questions reducer`, () => {
-    it('simply works', () => {
+describe(`Questions reducer`, () => {
+    it('Creates a new state by combining an existing state with a new question', () => {
         const state = [
             {question_id: "foo"},
             {question_id: "bar"},
